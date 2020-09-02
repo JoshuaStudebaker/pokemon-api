@@ -5,7 +5,6 @@ import { sandboxApi } from "../Services/AxiosService.js";
 class MyPokesService {
   async addPoke() {
     console.log("first");
-    debugger;
     let rez = await sandboxApi.post("", ProxyState.activePokes);
     console.log("second");
     console.log(rez);
